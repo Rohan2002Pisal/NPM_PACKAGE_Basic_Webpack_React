@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Basic Webpack React Setup with Rollup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application setup, bundled using Webpack for development and Rollup for production builds. It leverages modern JavaScript features and efficient minification for optimal performance.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Build](#build)
+- [Project Structure](#project-structure)
+- [Rollup Configuration](#rollup-configuration)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+This project is designed to help you quickly get started with React using Webpack for development and Rollup for optimized production builds. It includes minification via `@rollup/plugin-terser` and transpiling modern JavaScript with Babel.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Before you begin, make sure you have the following installed:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [Node.js](https://nodejs.org/en/download/) (v14+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for managing dependencies
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the repository** to your local machine:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/Rohan2002Pisal/NPM_PACKAGE_Basic_Webpack_React.git
+   
+   cd Basic_Webpack_React
